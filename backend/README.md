@@ -5,34 +5,32 @@ Short description or introduction of your project.
 ## Table of Contents
 
 - [Project Description](#project-description)
-- [Installation](#installation)
 - [Usage](#usage)
 - [Features](#features)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Project Description
 
-Explain in more detail what your project is about. Include key features, technologies used, and any other relevant information.
-
-## Installation
-
-Provide instructions on how to install and set up your project. Include any dependencies or prerequisites needed to run the project.
+Laravel API using Sanctum - Basic Login/Logout and Registration API
 
 ## Usage
 
-Explain how to use your project. Provide examples or code snippets if applicable.
+API endpoints:
+Registration : POST Method
+/api/signup
+
+Login: POST Method 
+/api/login
+Headers: Bearer token
+
+User data: GET Method
+/sanctum/csrf-cookie
+
+Logout: POST Method
+/api/logout
+Header: Bearer token
 
 ## Features
+update .env file with following code at the end of file
 
-List and briefly describe the main features of your project.
-
-## Contributing
-
-Explain how others can contribute to your project. Include guidelines for submitting bug reports, feature requests, and pull requests.
-
-## License
-
-Specify the license under which your project is distributed. For example:
-[MIT License](LICENSE)
-
+SESSION_DOMAIN = http://backend-api.lndo.site // add your url
+SANCTUM_STATEFUL_DOMAINS = http://backend-api.lndo.site // add your url
