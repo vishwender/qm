@@ -1,0 +1,7 @@
+name: backend-api
+recipe: laravel
+config:
+  webroot: public
+services:
+  myservice:
+   type: phpmyadmin 
