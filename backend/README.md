@@ -13,6 +13,7 @@ Short description or introduction of your project.
 Laravel API using Sanctum - Basic Login/Logout and Registration API
 
 ## Usage
+Run migrations
 
 API endpoints:
 Registration : POST Method
